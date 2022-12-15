@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+#flex-grid {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 10%;
+    border: 1px solid black;
+}
