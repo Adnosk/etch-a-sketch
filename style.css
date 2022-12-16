@@ -9,18 +9,16 @@ body {
 
 #game {
     display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%);
-  height: 100vh;
-  width: 100vh;
-  margin-right: auto;
-  margin-left: auto;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(16, 6.25%);
+    height: 100vh;
+    width: 100vh;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .box {
-    background: #CCC;
-  color:white;
-  align-self: stretch;
-  justify-self: stretch;
-  margin: 1vh;
+    align-self: stretch;
+    justify-self: stretch;
+    border: 1px solid black;
 }
