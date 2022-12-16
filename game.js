@@ -15,8 +15,8 @@ function gridMaker(size) {
         }
     }
     const calc = 100 / size;
-    document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${calc}%`; //grid-template-columns: repeat(16, 6.25%);
-    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${calc}%`;
+    document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${calc}%`; // sets the CSS for columns
+    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${calc}%`; // sets the CSS for rows
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
         box.addEventListener('mouseover', changeColor)
