@@ -1,7 +1,11 @@
 const container = document.getElementById('container');
-const flexGrid = document.createElement('div');
+const game = document.createElement('div');
+const grid = document.createElement('div');
 const box = document.createElement('div');
 
-flexGrid.setAttribute('id','flex-grid');
-flexGrid.innerHTML = 'test';
-container.appendChild(flexGrid);
+game.setAttribute('id','game');
+grid.setAttribute('class', 'grid');
+
+container.appendChild(game);
+game.appendChild(grid);
+grid.appendChild(box);
