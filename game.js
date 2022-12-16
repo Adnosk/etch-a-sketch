@@ -14,9 +14,8 @@ function gridMaker(size = 16) {
             playGrid.appendChild(div);
         }
     }
-    const calc = 100 / size;
-    document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${calc}%`; // sets the CSS for columns
-    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${calc}%`; // sets the CSS for rows
+    document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${100/size}%`; // sets the CSS for columns
+    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${100/size}%`; // sets the CSS for rows
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
         box.addEventListener('mouseover', changeColor)
