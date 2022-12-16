@@ -48,4 +48,8 @@ function deleteGrid() {
     }
 }
 
+function clearGrid() {
+    document.querySelectorAll('.box').forEach(e => e.style.backgroundColor = "white");
+}
+
 gridMaker();
