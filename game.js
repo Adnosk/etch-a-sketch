@@ -15,7 +15,6 @@ function gridMaker(size = 16) {
         }
     }
     document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${size}fr`; // sets the CSS for columns
-    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${size}fr`; // sets the CSS for rows
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
         box.addEventListener('mouseover', changeColor)
