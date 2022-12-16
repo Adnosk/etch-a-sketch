@@ -5,7 +5,7 @@ const playGrid = document.createElement('div');
 playGrid.setAttribute('id', 'game');
 container.appendChild(playGrid);
 
-// create the grid, query selectors and event listeners
+// create the grid, css, query selectors and event listeners
 function gridMaker(size) {
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
@@ -14,6 +14,9 @@ function gridMaker(size) {
             playGrid.appendChild(div);
         }
     }
+    const calc = 100 / size;
+    document.getElementById('game').style.gridTemplateColumns = `repeat(${size}, ${calc}%`; //grid-template-columns: repeat(16, 6.25%);
+    document.getElementById('game').style.gridTemplateRows = `repeat(${size}, ${calc}%`;
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
         box.addEventListener('mouseover', changeColor)
