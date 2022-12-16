@@ -1,9 +1,9 @@
 const container = document.getElementById('container');
 
-const playGridSection = document.createElement('div');
+const playGrid = document.createElement('div');
 
-playGridSection.setAttribute('id', 'game');
-container.appendChild(playGridSection);
+playGrid.setAttribute('id', 'game');
+container.appendChild(playGrid);
 
 // create the grid
 function gridMaker(size) {
@@ -11,7 +11,7 @@ function gridMaker(size) {
         for (let j = 0; j < size; j++) {
             const div = document.createElement('div');
             div.className = 'box';
-            playGridSection.appendChild(div);
+            playGrid.appendChild(div);
         }
 
     }
