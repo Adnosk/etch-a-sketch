@@ -5,8 +5,8 @@ const playGrid = document.createElement('div');
 playGrid.setAttribute('id', 'game');
 container.appendChild(playGrid);
 
-// create the grid, css, query selectors and event listeners
-function gridMaker(size) {
+// create the grid, css, query selectors and event listeners. 16 is the default value
+function gridMaker(size = 16) {
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
             const div = document.createElement('div');
@@ -49,7 +49,4 @@ function deleteGrid() {
     }
 }
 
-// default grid size
-let gridSize = 16;
-
-gridMaker(gridSize);
+gridMaker();
