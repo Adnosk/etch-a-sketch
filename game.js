@@ -50,7 +50,7 @@ function deleteGrid() {
 
 // clear grid by changing the color back to white
 function clearGrid() {
-    document.querySelectorAll('.box').forEach(box => box.style.backgroundColor = "white");
+    document.querySelectorAll('.box').forEach(element => element.style.backgroundColor = "white");
 }
 
 gridMaker();
