@@ -22,6 +22,18 @@ function changeColor(e) {
     e.target.style.backgroundColor = 'black';
 }
 
+function askGrid() {
+    let text;
+    let gridInput = prompt('Please enter the number of rows/columns:', '16');
+    if (gridInput > 1 && gridInput < 100) {
+        text = `The new grid has a size of ${gridInput}x${gridInput}`
+        gridMaker(gridInput);
+    } else {
+        text = 'The input has to be bigger than 1 and less than 100!'
+    }
+    document.getElementById('userInput').innerHTML = text;
+}
+
 // default grid size
 let gridSize = 16;
 
